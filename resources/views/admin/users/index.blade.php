@@ -2,6 +2,16 @@
 
 @section('content')
 
+    @if(Session::has('deleted_user'))
+
+        <div class="alert alert-success">
+
+            <p>{{ session('deleted_user') }}</p>
+
+        </div>
+
+    @endif
+
     <h1>Users</h1>
 
     <hr>
