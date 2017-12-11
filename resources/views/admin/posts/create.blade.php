@@ -14,7 +14,7 @@
     <br>
 
     {!! Form::label('category_id', 'Category:') !!}
-    {!! Form::select('category_id', [1=>'PHP', 0=>'Javascript'], null,['class'=>'form-control']) !!}
+    {!! Form::select('category_id', [''=>'Choose Category'] + $categories, null,['class'=>'form-control']) !!}
 
     <br>
 

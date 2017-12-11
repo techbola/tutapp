@@ -148,7 +148,7 @@ class AdminUsersController extends Controller
 
             $name = time() . $file->getClientOriginalName();
 
-            $file->move('user_images', $name);
+            $file->move('images', $name);
 
             $photo = Photo::create(['file'=>$name]);
 
@@ -172,7 +172,6 @@ class AdminUsersController extends Controller
      */
     public function destroy($id)
     {
-        //
 
        // User::findOrFail($id)->delete();
 
