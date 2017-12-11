@@ -43,8 +43,7 @@
 
                     <tr>
                         <td>{{ $category->id }}</td>
-                        <td>{{ $category->name ? $category->name : 'Uncategorized' }}</td>
-                        <td>{{ $category->created_at ? $category->created_at->diffForHumans() : 'no date' }}</td>
+                        <td><a href="{{ route('admin.categories.edit', $category->id) }}">{{ $category->name ? $category->name : 'Uncategorized' }}</a>
                         <td>{{ $category->updated_at ? $category->updated_at->diffForHumans() : 'no date' }}</td>
                     </tr>
 
