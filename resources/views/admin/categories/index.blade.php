@@ -2,6 +2,16 @@
 
 @section('content')
 
+    @if(Session::has('deleted_category'))
+
+        <div class="alert alert-success">
+
+            <p>{{ session('deleted_category') }}</p>
+
+        </div>
+
+    @endif
+
     <h1>Create Category</h1>
 
     <hr>
